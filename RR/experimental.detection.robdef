@@ -1,0 +1,28 @@
+
+service experimental.detection
+
+stdver 0.9
+
+struct WebcamImage
+    field int32 width
+    field int32 height
+    field int32 step
+    field uint8[] data
+end
+
+struct Result
+    field string{list} detected_list
+    field double[] centroids_list
+end
+
+object Detection
+
+    function void StartStreaming()
+    function void StopStreaming()
+    wire WebcamImage FrameStream [readonly]
+    wire Result Results [readonly]
+    property Result result
+    property WebcamImage image
+end
+
+

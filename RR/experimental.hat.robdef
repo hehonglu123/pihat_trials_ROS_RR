@@ -1,0 +1,19 @@
+
+service experimental.hat
+
+stdver 0.9
+
+struct pixel_info
+    field int16 x
+    field int16 y
+    field int16[] rgb
+end
+
+
+object Hat
+
+    function void setf_pixel(pixel_info pixel)
+    function void clear()
+end
+
+
