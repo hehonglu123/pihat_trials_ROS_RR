@@ -20,7 +20,7 @@ When building ROS, many message and service types are built together, which you 
 string[] names
 float32[] centroids
 ```
-This bascially shows the message contains a list of string `names` and a list of float32 `centroids`, with unset length. Most of the time the common messages meet our need. The messages are built through `catkin_make`, and if there's error saying message not built, try `$ source ~/pihat_trials/ROS/devel/setup.bash` again.
+This bascially shows the message contains a list of string `names` and a list of float32 `centroids`, with unset length. Most of the time the common messages meet our need. The messages are built through `catkin_make`, and if there's error saying message not built, try `$ source ~/pihat_trials/ROS/devel/setup.bash` again. To import this message type later, try `from trials.msg import dresult` in your python script.
 
 # ROS Publisher
 On Pi side, under `~/pihat_trials/ROS/src/trials/src/` there is a python script called `cam_pub.py`. At the very top, we include ROS library and message types:
