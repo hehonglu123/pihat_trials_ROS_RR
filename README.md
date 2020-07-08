@@ -36,7 +36,7 @@ To install ROS and RR, follow the instruction on the official website:
 Finally, clone this repository under your root directory:
 ```
 $ cd ~
-$ git clone --recurse  https://github.com/hehonglu123/pihat_trials.git
+$ git clone https://github.com/hehonglu123/pihat_trials_ROS_RR.git
 ```
 ## Raspberry Pi
 ### Hardware
@@ -51,7 +51,7 @@ After it's finished, connect HDMI cable, mouse and keyboard to the RaspberryPi, 
 All packages needed are already installed in the image, so just clone this repository under your root directory:
 ```
 $ cd ~
-$ git clone --recurse https://github.com/hehonglu123/pihat_trials.git
+$ git clone https://github.com/hehonglu123/pihat_trials_ROS_RR.git
 ```
 
 To try out the connection between RaspberryPi and computer, try ping your RaspberryPi on computer first:
